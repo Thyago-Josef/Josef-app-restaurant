@@ -10,6 +10,7 @@ public class Drinks extends ItemOrder {
     private Integer volume;
     private Boolean alcoholic;
 
+
     // ✅ CONSTRUTOR SEM ARGUMENTOS para JPA
     public Drinks() {
         super();

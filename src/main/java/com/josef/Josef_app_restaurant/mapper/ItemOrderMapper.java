@@ -6,7 +6,7 @@ import com.josef.Josef_app_restaurant.entities.Drinks;
 import com.josef.Josef_app_restaurant.entities.Food;
 import org.mapstruct.Mapper;
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface ItemOrderMapper {
 
     FoodDTO toFoodDTO(Food food);

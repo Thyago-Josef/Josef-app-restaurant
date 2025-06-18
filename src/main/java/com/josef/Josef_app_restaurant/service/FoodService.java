@@ -195,39 +195,39 @@ public class FoodService extends ItemOrdemService<Food,FoodDTO> {
          * @param category Categoria da comida
          * @return Lista de FoodDTO da categoria especificada
          */
-        public List<FoodDTO> findFoodByCategory (String category){
-            // Assumindo que existe este método no FoodRepository
-            List<Food> foods = foodRepository.findByCategory(category);
-            return foods.stream()
-                    .map(this::mapToDTO)
-                    .collect(Collectors.toList());
-        }
+//        public List<FoodDTO> findFoodByCategory (String category){
+//            // Assumindo que existe este método no FoodRepository
+//            List<Food> foods = foodRepository.findByCategory(category);
+//            return foods.stream()
+//                    .map(this::mapToDTO)
+//                    .collect(Collectors.toList());
+//        }
 
         /**
          * Busca comidas vegetarianas ou não vegetarianas
          * @param vegetarian true para vegetarianas, false para não vegetarianas
          * @return Lista de FoodDTO
          */
-        public List<FoodDTO> findFoodByVegetarian ( boolean vegetarian){
-            // Assumindo que existe este método no FoodRepository
-            List<Food> foods = foodRepository.findByVegetarian(vegetarian);
-            return foods.stream()
-                    .map(this::mapToDTO)
-                    .collect(Collectors.toList());
-        }
+//        public List<FoodDTO> findFoodByVegetarian ( boolean vegetarian){
+//            // Assumindo que existe este método no FoodRepository
+//            List<Food> foods = foodRepository.findByVegetarian(vegetarian);
+//            return foods.stream()
+//                    .map(this::mapToDTO)
+//                    .collect(Collectors.toList());
+//        }
 
         /**
          * Busca comidas veganas
          * @param vegan true para veganas, false para não veganas
          * @return Lista de FoodDTO
          */
-        public List<FoodDTO> findFoodByVegan ( boolean vegan){
-            // Assumindo que existe este método no FoodRepository
-            List<Food> foods = foodRepository.findByVegan(vegan);
-            return foods.stream()
-                    .map(this::mapToDTO)
-                    .collect(Collectors.toList());
-        }
+//        public List<FoodDTO> findFoodByVegan ( boolean vegan){
+//            // Assumindo que existe este método no FoodRepository
+//            List<Food> foods = foodRepository.findByVegan(vegan);
+//            return foods.stream()
+//                    .map(this::mapToDTO)
+//                    .collect(Collectors.toList());
+//        }
 
         /**
          * Busca comidas por faixa de preço
@@ -235,90 +235,90 @@ public class FoodService extends ItemOrdemService<Food,FoodDTO> {
          * @param maxPrice Preço máximo
          * @return Lista de FoodDTO na faixa de preço
          */
-        public List<FoodDTO> findFoodByPriceRange (Double minPrice, Double maxPrice){
-            // Assumindo que existe este método no FoodRepository
-            List<Food> foods = foodRepository.findByPriceBetween(minPrice, maxPrice);
-            return foods.stream()
-                    .map(this::mapToDTO)
-                    .collect(Collectors.toList());
-        }
+//        public List<FoodDTO> findFoodByPriceRange (Double minPrice, Double maxPrice){
+//            // Assumindo que existe este método no FoodRepository
+//            List<Food> foods = foodRepository.findByPriceBetween(minPrice, maxPrice);
+//            return foods.stream()
+//                    .map(this::mapToDTO)
+//                    .collect(Collectors.toList());
+//        }
 
         /**
          * Busca comidas ativas/disponíveis
          * @return Lista de FoodDTO ativas
          */
-        public List<FoodDTO> findActiveFood () {
-            // Assumindo que existe este método no FoodRepository
-            List<Food> foods = foodRepository.findByActiveTrue();
-            return foods.stream()
-                    .map(this::mapToDTO)
-                    .collect(Collectors.toList());
-        }
+//        public List<FoodDTO> findActiveFood () {
+//            // Assumindo que existe este método no FoodRepository
+//            List<Food> foods = foodRepository.findByActiveTrue();
+//            return foods.stream()
+//                    .map(this::mapToDTO)
+//                    .collect(Collectors.toList());
+//        }
 
         /**
          * Busca comidas por nível de tempero/picância
          * @param spiceLevel Nível de tempero (ex: "MILD", "MEDIUM", "HOT", "EXTRA_HOT")
          * @return Lista de FoodDTO com o nível de tempero especificado
          */
-        public List<FoodDTO> findFoodBySpiceLevel (String spiceLevel){
-            // Assumindo que existe este método no FoodRepository
-            List<Food> foods = foodRepository.findBySpiceLevel(spiceLevel);
-            return foods.stream()
-                    .map(this::mapToDTO)
-                    .collect(Collectors.toList());
-        }
+//        public List<FoodDTO> findFoodBySpiceLevel (String spiceLevel){
+//            // Assumindo que existe este método no FoodRepository
+//            List<Food> foods = foodRepository.findBySpiceLevel(spiceLevel);
+//            return foods.stream()
+//                    .map(this::mapToDTO)
+//                    .collect(Collectors.toList());
+//        }
 
         /**
          * Busca comidas por tempo de preparo
          * @param maxPreparationTime Tempo máximo de preparo em minutos
          * @return Lista de FoodDTO com tempo de preparo menor ou igual ao especificado
          */
-        public List<FoodDTO> findFoodByPreparationTime (Integer maxPreparationTime){
-            // Assumindo que existe este método no FoodRepository
-            List<Food> foods = foodRepository.findByPreparationTimeLessThanEqual(maxPreparationTime);
-            return foods.stream()
-                    .map(this::mapToDTO)
-                    .collect(Collectors.toList());
-        }
+//        public List<FoodDTO> findFoodByPreparationTime (Integer maxPreparationTime){
+//            // Assumindo que existe este método no FoodRepository
+//            List<Food> foods = foodRepository.findByPreparationTimeLessThanEqual(maxPreparationTime);
+//            return foods.stream()
+//                    .map(this::mapToDTO)
+//                    .collect(Collectors.toList());
+//        }
 
         /**
          * Busca comidas que contêm determinados ingredientes
          * @param ingredient Ingrediente a ser buscado
          * @return Lista de FoodDTO que contém o ingrediente
          */
-        public List<FoodDTO> findFoodByIngredient (String ingredient){
-            // Assumindo que existe este método no FoodRepository
-            List<Food> foods = foodRepository.findByIngredientsContaining(ingredient);
-            return foods.stream()
-                    .map(this::mapToDTO)
-                    .collect(Collectors.toList());
-        }
+//        public List<FoodDTO> findFoodByIngredient (String ingredient){
+//            // Assumindo que existe este método no FoodRepository
+//            List<Food> foods = foodRepository.findByIngredientsContaining(ingredient);
+//            return foods.stream()
+//                    .map(this::mapToDTO)
+//                    .collect(Collectors.toList());
+//        }
 
         /**
          * Busca comidas por alergênicos
          * @param allergen Alergênico a ser evitado
          * @return Lista de FoodDTO que NÃO contém o alergênico especificado
          */
-        public List<FoodDTO> findFoodWithoutAllergen (String allergen){
-            // Assumindo que existe este método no FoodRepository
-            List<Food> foods = foodRepository.findByAllergensNotContaining(allergen);
-            return foods.stream()
-                    .map(this::mapToDTO)
-                    .collect(Collectors.toList());
-        }
+//        public List<FoodDTO> findFoodWithoutAllergen (String allergen){
+//            // Assumindo que existe este método no FoodRepository
+//            List<Food> foods = foodRepository.findByAllergensNotContaining(allergen);
+//            return foods.stream()
+//                    .map(this::mapToDTO)
+//                    .collect(Collectors.toList());
+//        }
 
         /**
          * Busca comidas mais populares (com base em algum critério de ranking)
          * @param limit Número máximo de resultados
          * @return Lista de FoodDTO das comidas mais populares
          */
-        public List<FoodDTO> findMostPopularFood ( int limit){
-            // Assumindo que existe este método no FoodRepository
-            List<Food> foods = foodRepository.findMostPopular(limit);
-            return foods.stream()
-                    .map(this::mapToDTO)
-                    .collect(Collectors.toList());
-        }
+//        public List<FoodDTO> findMostPopularFood ( int limit){
+//            // Assumindo que existe este método no FoodRepository
+//            List<Food> foods = foodRepository.findMostPopular(limit);
+//            return foods.stream()
+//                    .map(this::mapToDTO)
+//                    .collect(Collectors.toList());
+//        }
 
         // ================= MÉTODOS DE VALIDAÇÃO =================
 
@@ -357,5 +357,4 @@ public class FoodService extends ItemOrdemService<Food,FoodDTO> {
 
         }
     }
-
 

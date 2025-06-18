@@ -169,13 +169,13 @@ public class DrinksService extends ItemOrdemService<Drinks,DrinksDTO> {
      * @param type Tipo da bebida
      * @return Lista de DrinksDTO do tipo especificado
      */
-    public List<DrinksDTO> findDrinksByType(String type) {
-        // Assumindo que existe este método no DrinksRepository
-        List<Drinks> drinks = drinksRepository.findByType(type);
-        return drinks.stream()
-                .map(this::mapToDTO)
-                .collect(Collectors.toList());
-    }
+//    public List<DrinksDTO> findDrinksByType(String type) {
+//        // Assumindo que existe este método no DrinksRepository
+//        List<Drinks> drinks = drinksRepository.findByType(type);
+//        return drinks.stream()
+//                .map(this::mapToDTO)
+//                .collect(Collectors.toList());
+//    }
 
     /**
      * Busca bebidas alcoólicas ou não alcoólicas
@@ -208,13 +208,13 @@ public class DrinksService extends ItemOrdemService<Drinks,DrinksDTO> {
      * Busca bebidas ativas/disponíveis
      * @return Lista de DrinksDTO ativas
      */
-    public List<DrinksDTO> findActiveDrinks() {
-        // Assumindo que existe este método no DrinksRepository
-        List<Drinks> drinks = drinksRepository.findByActiveTrue();
-        return drinks.stream()
-                .map(this::mapToDTO)
-                .collect(Collectors.toList());
-    }
+//    public List<DrinksDTO> findActiveDrinks() {
+//        // Assumindo que existe este método no DrinksRepository
+//        List<Drinks> drinks = drinksRepository.findByActiveTrue();
+//        return drinks.stream()
+//                .map(this::mapToDTO)
+//                .collect(Collectors.toList());
+//    }
 
     // ================= MÉTODOS DE CONSULTA =================
 

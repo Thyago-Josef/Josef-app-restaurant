@@ -9,12 +9,12 @@ import java.util.List;
 @Repository
 public interface DrinksRepository extends ItensOrderRepository<Drinks> {
 
-    List<Drinks> findByType(String type);
+//    List<Drinks> findByType(String type);
 
     List<Drinks> findByAlcoholic(boolean alcoholic);
 
 
     List<Drinks> findByPriceBetween(Double minPrice, Double maxPrice);
 
-    List<Drinks> findByActiveTrue();
+//    List<Drinks> findByActiveTrue();
 }
